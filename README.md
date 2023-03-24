@@ -11,3 +11,4 @@ Day - 5 - Beginner - Loops<br>
 Day - 6 - Beginner - Functions and karel<br>
 Day - 7 - Beginner - Hangman<br>
 Day - 8 - Beginner - Function parameters and ceaser cipher<br>
+Day 9 - Beginner - Dictionaries, Nesting and the Secret Auction<br>
