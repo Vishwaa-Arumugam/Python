@@ -14,3 +14,4 @@ Day - 8 - Beginner - Function parameters and ceaser cipher<br>
 Day - 9 - Beginner - Dictionaries, Nesting and the Secret Auction<br>
 Day - 10 - Beginner - Functions with outputs<br>
 Day - 11 - Beginner - The Blackjack Capstone project<br>
+Day - 12 - Beginner - Scopes & Number guessing game<br>
