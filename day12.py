@@ -1,32 +1,36 @@
-###Scope
+##Scope
 
-# enemies = 1 #global scope
+enemies = 1 #global scope
 
-# def increase_enemies():
-#     enemies = 2 # local scope
-#     print(f"enemies inside functions : {enemies}")
+def increase_enemies():
+    enemies = 2 # local scope
+    print(f"enemies inside functions : {enemies}")
 
-# increase_enemies()
-# print(f"enemies outside the function {enemies}")
+increase_enemies()
+print(f"enemies outside the function {enemies}")
 
-# game_level = 3
-# def abc():
-#     enemies = ["skeleton","zombie","alien"]
-#     if game_level < 5:
-#         new_enemy = enemies[0]
-# print(new_enemy)
+game_level = 3
+def abc():
+    enemies = ["skeleton","zombie","alien"]
+    if game_level < 5:
+        new_enemy = enemies[0]
+print(new_enemy)
 
 
-# modifying global scope
+modifying global scope
 
-# enemies = 1
+enemies = 1
 
-# def increase_enemies():
-#     print(f"enemies inside the finction : {enemies}")
-#     return enemies + 1
+def increase_enemies():
+    print(f"enemies inside the finction : {enemies}")
+    return enemies + 1
 
-# enemies = increase_enemies()
-# print(f"enemis outside the finction : {enemies}")
+enemies = increase_enemies()
+print(f"enemis outside the finction : {enemies}")
+
+
+#####################################FROM HERE THE ACTUAL DAY'S CHALANGE STARTS############################################
+
 
 import random
 
