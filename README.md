@@ -19,3 +19,4 @@ Day - 13 - Beginner - Debugging: How to Find and Fix Errors in your Code<br>
 Day - 14 - Beginner - Higher, Lower game project<br>
 Day 15 - Intermediate - Local Development Environment Setup & the Coffee Machine<br>
 Day - 16 - Intermediate - Object Oriented Programming(OOP)<br>
+Day - 17 - Intermediate - The Quiz Project and the benefits of OOP<br>
