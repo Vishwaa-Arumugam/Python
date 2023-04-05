@@ -21,4 +21,5 @@ Day 15 - Intermediate - Local Development Environment Setup & the Coffee Machine
 Day - 16 - Intermediate - Object Oriented Programming(OOP) <br>
 Day - 17 - Intermediate - The Quiz Project and the benefits of OOP <br>
 Day - 18 - Intermediate - Turtle and The Graphical User Interface(GUI) <br>
-Day -19 - Intermediate - Instances, State and Higher Order Functions <br>
+Day - 19 - Intermediate - Instances, State and Higher Order Functions <br>
+Day - 20 - Intermediate - Build a snake game part 1 : Animation and Co-ordinates <br>
