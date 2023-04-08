@@ -25,3 +25,4 @@ Day - 19 - Intermediate - Instances, State and Higher Order Functions <br>
 Day - 20 - Intermediate - Build a snake game part 1 : Animation and Co-ordinates <br>
 Day - 21 - Intermediate - Build a snake game part 2 : Animation and Co-ordinates <br>
 Day - 22 - Intermediate - Build Pong : The famous Arcade Game <br>
+Day - 23 - Intermediate - The Turtle crossing capstone project <br>
