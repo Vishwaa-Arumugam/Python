@@ -26,4 +26,5 @@ Day - 20 - Intermediate - Build a snake game part 1 : Animation and Co-ordinates
 Day - 21 - Intermediate - Build a snake game part 2 : Animation and Co-ordinates <br>
 Day - 22 - Intermediate - Build Pong : The famous Arcade Game <br>
 Day - 23 - Intermediate - The Turtle crossing capstone project <br>
-Day - 23 - Intermediate - Files, Directories and Path <br>
+Day - 24 - Intermediate - Files, Directories and Path <br>
+Day - 25 - Intermediate - Working with CSV Data and the Pandas Library <br>
