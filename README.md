@@ -17,7 +17,7 @@ Day - 11 - Beginner - The Blackjack Capstone project <br>
 Day - 12 - Beginner - Scopes & Number guessing game <br>
 Day - 13 - Beginner - Debugging: How to Find and Fix Errors in your Code <br>
 Day - 14 - Beginner - Higher, Lower game project <br>
-Day 15 - Intermediate - Local Development Environment Setup & the Coffee Machine <br>
+Day - 15 - Intermediate - Local Development Environment Setup & the Coffee Machine <br>
 Day - 16 - Intermediate - Object Oriented Programming(OOP) <br>
 Day - 17 - Intermediate - The Quiz Project and the benefits of OOP <br>
 Day - 18 - Intermediate - Turtle and The Graphical User Interface(GUI) <br>
@@ -28,3 +28,4 @@ Day - 22 - Intermediate - Build Pong : The famous Arcade Game <br>
 Day - 23 - Intermediate - The Turtle crossing capstone project <br>
 Day - 24 - Intermediate - Files, Directories and Path <br>
 Day - 25 - Intermediate - Working with CSV Data and the Pandas Library <br>
+Day - 26 - Intermediate - List Comprehension and the NATO Alphabet <br>
