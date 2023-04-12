@@ -29,3 +29,4 @@ Day - 23 - Intermediate - The Turtle crossing capstone project <br>
 Day - 24 - Intermediate - Files, Directories and Path <br>
 Day - 25 - Intermediate - Working with CSV Data and the Pandas Library <br>
 Day - 26 - Intermediate - List Comprehension and the NATO Alphabet <br>
+Day - 27 - Intermediate - Tkinter, *args, **kwargs and Creating GUI Programs <br>
