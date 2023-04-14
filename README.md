@@ -31,3 +31,4 @@ Day - 25 - Intermediate - Working with CSV Data and the Pandas Library <br>
 Day - 26 - Intermediate - List Comprehension and the NATO Alphabet <br>
 Day - 27 - Intermediate - Tkinter, *args, **kwargs and Creating GUI Programs <br>
 Day - 28 - Intermediate - Tkinter, Dynamic Typing and the Pomodoro GUI Application <br>
+Day - 29 - Intermediate - Building a Password Manager GUI App with Tkinter <br>
