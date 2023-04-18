@@ -1,7 +1,7 @@
 # Python
 My Python journey from a beginner 
 
-It will contain all the python topics from basic and also contains some tools like requests, selenium, api, turle, tkinter etc
+It will contain all the python topics from basic and also contains some tools like requests, selenium, api, turtle, tkinter etc
 
 Day - 1 - Beginner - Working with Variables in Python to Manage Data <br>
 Day - 2 - Beginner - Understanding Data Types and How to Manipulate Strings <br>
@@ -34,3 +34,4 @@ Day - 28 - Intermediate - Tkinter, Dynamic Typing and the Pomodoro GUI Applicati
 Day - 29 - Intermediate - Building a Password Manager GUI App with Tkinter <br>
 Day - 30 - Intermediate - Errors, Exceptions and JSON Data: Improving the Password <br>
 Day - 31 - Intermediate - Flash card app project <br>
+Day 32 - Intermediate+ Send Email (smtplib) & Manage Dates (datetime) <br>
