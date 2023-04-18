@@ -8,16 +8,16 @@ It will contain all the python topics from basic and also contains some tools li
 - Day - 3 - Beginner - Control flow and logical operators <br>
 - Day - 4 - Beginner - Randomisation and python list <br>
 - Day - 5 - Beginner - Loops <br>
-Day - 6 - Beginner - Functions and karel <br>
-Day - 7 - Beginner - Hangman <br>
-Day - 8 - Beginner - Function parameters and ceaser cipher <br>
-Day - 9 - Beginner - Dictionaries, Nesting and the Secret Auction <br>
-Day - 10 - Beginner - Functions with outputs <br>
-Day - 11 - Beginner - The Blackjack Capstone project <br>
-Day - 12 - Beginner - Scopes & Number guessing game <br>
-Day - 13 - Beginner - Debugging: How to Find and Fix Errors in your Code <br>
-Day - 14 - Beginner - Higher, Lower game project <br>
-Day - 15 - Intermediate - Local Development Environment Setup & the Coffee Machine <br>
+- Day - 6 - Beginner - Functions and karel <br>
+- Day - 7 - Beginner - Hangman <br>
+- Day - 8 - Beginner - Function parameters and ceaser cipher <br>
+- Day - 9 - Beginner - Dictionaries, Nesting and the Secret Auction <br>
+- Day - 10 - Beginner - Functions with outputs <br>
+- Day - 11 - Beginner - The Blackjack Capstone project <br>
+- Day - 12 - Beginner - Scopes & Number guessing game <br>
+- Day - 13 - Beginner - Debugging: How to Find and Fix Errors in your Code <br>
+- Day - 14 - Beginner - Higher, Lower game project <br>
+- Day - 15 - Intermediate - Local Development Environment Setup & the Coffee Machine <br>
 Day - 16 - Intermediate - Object Oriented Programming(OOP) <br>
 Day - 17 - Intermediate - The Quiz Project and the benefits of OOP <br>
 Day - 18 - Intermediate - Turtle and The Graphical User Interface(GUI) <br>
