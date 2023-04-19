@@ -36,3 +36,4 @@ It will contain all the python topics from basic and also contains some tools li
 - Day - 31 - Intermediate - Flash card app project <br>
 - Day - 32 - Intermediate+ Send Email (smtplib) & Manage Dates (datetime) <br>
 - Day - 33 - Intermediate+ API Endpoints & API Parameters - ISS Overhead Notifier <br>
+- Day - 34 - Intermediate+ API Practice - Creating a GUI Quiz app <br>
