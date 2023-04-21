@@ -32,7 +32,7 @@ It will contain all the python topics from basic and also contains some tools li
 - Day - 27 - Intermediate - Tkinter, *args, ** kwargs and Creating GUI Programs <br>
 - Day - 28 - Intermediate - Tkinter, Dynamic Typing and the Pomodoro GUI Application <br>
 - Day - 29 - Intermediate - Building a Password Manager GUI App with Tkinter <br>
- Day - 30 - Intermediate - Errors, Exceptions and JSON Data: Improving the Password <br>
+- Day - 30 - Intermediate - Errors, Exceptions and JSON Data: Improving the Password <br>
 - Day - 31 - Intermediate - Flash card app project <br>
 - Day - 32 - Intermediate+ Send Email (smtplib) & Manage Dates (datetime) <br>
 - Day - 33 - Intermediate+ API Endpoints & API Parameters - ISS Overhead Notifier <br>
