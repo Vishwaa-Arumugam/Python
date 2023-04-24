@@ -3,10 +3,10 @@ from twilio.rest import Client
 
 STOCK = "TSLA"
 COMPANY_NAME = "Tesla Inc"
-STOCK_API_KEY = "31IW4X4DUWZTJSL1"
-NEWS_API_KEY = "91abb938552e4402a5ea9b75c905d3b6"
-acc_sid = "ACb47ff0c6105bb7d04088e849c301cf31"
-auth_token = "e0f0b9748fd3726f585b74d963c50b8b"
+STOCK_API_KEY = "YOUR_KEY"
+NEWS_API_KEY = "NEWS_API_KEY"
+acc_sid = "ACC_SID_FROM_TWILIO"
+auth_token = "TWILIO_TOKEN"
 
 parameters = {
     "function": "TIME_SERIES_INTRADAY",
