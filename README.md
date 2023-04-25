@@ -39,4 +39,4 @@ It will contain all the python topics from basic and also contains some tools li
 - Day - 34 - Intermediate+ API Practice - Creating a GUI Quiz app <br>
 - Day - 35 - Intermediate+ Keys, Authentication & Environment Variables: Send SMS <br>
 - Day - 36 - Intermediate+ API - Stock trading news alert project <br>
-- Day - 37 - Intermediate+ Habit Tracking Project: API Post Requests & Headers
+- Day - 37 - Intermediate+ Habit Tracking Project: API Post Requests & Headers <br>
