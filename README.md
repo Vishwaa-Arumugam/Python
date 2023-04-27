@@ -41,3 +41,4 @@ It will contain all the python topics from basic and also contains some tools li
 - Day - 36 - Intermediate+ API - Stock trading news alert project <br>
 - Day - 37 - Intermediate+ Habit Tracking Project: API Post Requests & Headers <br>
 - Day - 38 - Intermediate+ Workout Tracking using Google Sheets <br>
+- Day - 39 - Intermediate+ Capstone Part1 - Flight Deal finder <br>
