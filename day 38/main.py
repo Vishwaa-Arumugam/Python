@@ -7,15 +7,15 @@ WEIGHT_KG = 55
 HEIGHT_CM = 170
 AGE = 20
 
-APP_ID = os.environ["NT_APP_ID"]  # "1b85cd44"
-APP_KEY = os.environ["NT_API_KEY"]  # "5526f06ac5cbc31116b9127c08be17df"
+APP_ID = os.environ["NT_APP_ID"]  
+APP_KEY = os.environ["NT_API_KEY"]  
 
 exercise_endpoint = "   "
 sheety_endpoint = os.environ[
-    "SHEET_ENDPOINT"]  # "https://api.sheety.co/f28f92cebbb256171fecf66ded592250/workoutTracking/workouts"
+    "SHEET_ENDPOINT"]  # "https://api.sheety.co/api_key/workoutTracking/workouts"
 
 basic_headers = {
-    "Authorization": f"Bearer {os.environ['TOKEN']}"  # "Basic dmlzaHdhYTphaHRpbmExMjM0"
+    "Authorization": f"Bearer {os.environ['TOKEN']}" 
 }
 
 exercise_text = input("Tell me which exercises you did: ")
