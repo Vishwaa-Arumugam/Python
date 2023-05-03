@@ -43,7 +43,6 @@ post_graph_parameters = {
     "date": today.strftime("%Y%m%d"),
     "quantity": "11"
 }
-# print(post_graph_parameters["date"])
 
 headers = {
     "X-USER-TOKEN": TOKEN
