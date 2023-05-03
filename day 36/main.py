@@ -31,7 +31,6 @@ day_before_yesterday_data = float(data_list[1]["4. close"])
 difference = abs(yesterday_data - day_before_yesterday_data)
 
 diff_percentage = (difference / yesterday_data) * 100
-print(diff_percentage)
 
 if diff_percentage > 5:
 
