@@ -2,9 +2,9 @@ import requests
 from twilio.rest import Client
 
 OPEN_WEATHER_MAP_ENDPOINT = "https://api.openweathermap.org/data/2.5/weather"
-api_key = "c5d771ef6c0bad3aec43dd337c1d8e9e"
-acc_sid = "ACb47ff0c6105bb7d04088e849c301cf31"
-auth_token = "e0f0b9748fd3726f585b74d963c50b8b"
+api_key = "api_key"
+acc_sid = "acc_sid"
+auth_token = "twilio_token"
 
 parameters = {
     "lat": -16.918550,
