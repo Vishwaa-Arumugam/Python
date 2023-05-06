@@ -46,4 +46,4 @@ It will contain all the python topics from basic and also contains some tools li
 - Day - 41 - Intermediate+ Intermediate HTML <br>
 - Day - 43 - Intermediate+ Introduction to CSS <br>
 - Day - 44 - Intermediate+ Intermediate CSS <br>
-
+- Day - 45 - Intermedaite+ Web scraping using beautiful soup <br>
