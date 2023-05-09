@@ -8,8 +8,8 @@ headers = {
 }
 URl = "https://www.amazon.in/Armani-Exchange-Analog-Black-Watch-AX2164/dp/B00VB71TVU/ref=sxin_26?asc_contentid=amzn1.osa.8fbc9648-47b5-4a87-bbf6-28cb637ddf80.A21TJRUUN4KGV.en_IN&asc_contenttype=article&ascsubtag=amzn1.osa.8fbc9648-47b5-4a87-bbf6-28cb637ddf80.A21TJRUUN4KGV.en_IN&content-id=amzn1.sym.feb2b32b-0085-4665-973c-36b431684408%3Aamzn1.sym.feb2b32b-0085-4665-973c-36b431684408&creativeASIN=B00VB71TVU&cv_ct_cx=watches+for+men&cv_ct_id=amzn1.osa.8fbc9648-47b5-4a87-bbf6-28cb637ddf80.A21TJRUUN4KGV.en_IN&cv_ct_pg=search&cv_ct_we=asin&cv_ct_wn=osp-single-source-pecos-desktop&keywords=watches+for+men&linkCode=oas&pd_rd_i=B00VB71TVU&pd_rd_r=4d0197fa-dbf9-41eb-bb43-5592222d8dd6&pd_rd_w=v6HdG&pd_rd_wg=kcUiI&pf_rd_p=feb2b32b-0085-4665-973c-36b431684408&pf_rd_r=RATPJSJH47ZZENS3S938&qid=1679154321&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=watch%2Caps%2C200&sr=1-2-c84eb971-91f2-4a4d-acce-811265c24254&tag=sm-content-21"
 
-my_email = "mname5121@gmail.com"
-password = "zhckvkgkaycgcgbf"
+my_email = "05451"
+password = ""
 
 response = requests.get(URl, headers=headers)
 response.raise_for_status()
