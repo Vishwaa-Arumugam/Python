@@ -48,4 +48,4 @@ It will contain all the python topics from basic and also contains some tools li
 - Day - 44 - Intermediate+ Intermediate CSS <br>
 - Day - 45 - Intermedaite+ Web scraping using beautiful soup <br>
 - Day - 46 - Intermediate+ Create a Spotify Playlist using the Musical Time Machine <br>
-- 
+- Day - 47 - Intermediate+ Create an Automated Amazon Price Tracker <br>
