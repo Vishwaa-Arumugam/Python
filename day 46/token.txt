@@ -1,1 +1,1 @@
-{"access_token": "BQCLO8ZRupSBRjE-avkQMMBrNUn1DNFvTYUhZ9UdZDAGzaHZyuOhf2SsKfxsyMbTwt_N8pIyUQpoRy8MfetqD0GV3-j_GKC_DGh_Bkr98K4ptKytb-pBbeU-Wc33wh-ngCDRh29XHtRddqB1UpQf3pbAToWFtmu0BtukYrj1f0ZKm58-LyDXLeRi2T0ylGETMt3LU_J85w5S4aBYGPFH2Jvv7RsGEkxq6L8NZTo", "token_type": "Bearer", "expires_in": 3600, "scope": "playlist-modify-private", "expires_at": 1679156818, "refresh_token": "AQBw2D7kqtCbIaPaqs_549300ORlS-lHzb1JaPxGHBzX9osoFw9vlFvniZHZwn4KaDZhYlpINtZ4LRbIFIqSECrwDCu4gaLEOiMoTedhFwjrhRW875laEZvDGtZq_6hQsb4"}
+corresponding link from the spotify api website
