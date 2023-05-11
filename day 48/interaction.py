@@ -4,11 +4,11 @@ from selenium.webdriver.common.keys import Keys
 from time import sleep
 
 
-chrome_driver_path = "C:\\Users\\Vishwaa Arumugam\\Desktop\\chromedriver.exe"
+chrome_driver_path = "chrome_driver_path"
 
 driver = webdriver.Chrome()
 
-driver.get("https://www.stealmylogin.com/demo.html")
+driver.get("corresponding_url_page_address")
 
 search = driver.find_element(By.NAME, "username")
 search.send_keys("Python")
