@@ -1,9 +1,9 @@
 import requests
 from datetime import datetime
 
-USERNAME = "vishwaa"
-TOKEN = "vishwaa@#$"
-GRAPH_Id = "graph1"
+USERNAME = "name"
+TOKEN = "token"
+GRAPH_Id = "graphid"
 pixela_endpoint = "https://pixe.la/v1/users"
 
 user_parameters = {
@@ -15,7 +15,6 @@ user_parameters = {
 }
 
 response = requests.post(url=pixela_endpoint, json=user_parameters)
-print(response.text)
 
 graph_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs"
 
@@ -33,7 +32,6 @@ headers = {
 }
 
 graph_response = requests.post(url=graph_endpoint, json=graph_parameters, headers=headers)
-print(graph_response.text)
 
 post_graph_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_Id}"
 
@@ -49,7 +47,6 @@ headers = {
 }
 
 post_graph_response = requests.post(url=post_graph_endpoint, json=post_graph_parameters, headers=headers)
-print(post_graph_response.text)
 
 update_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_Id}/{today}"
 
@@ -63,4 +60,3 @@ new_pixel_data = {
 delete_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_Id}/{today}"
 
 delete_response = requests.delete(url=delete_endpoint, headers=headers)
-print(delete_response.text)
