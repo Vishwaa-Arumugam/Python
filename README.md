@@ -51,3 +51,5 @@ It will contain all the python topics from basic and also contains some tools li
 - Day - 47 - Intermediate+ Create an Automated Amazon Price Tracker <br>
 - Day - 48 - Intermediate+ Selenium Webdriver Browser and Game Playing Bot <br>
 - Day - 49 - Intermediate+ Automating Job Applications on LinkedIn <br> 
+- Day - 50 - Intermediate+ Auto tinder swiping bot <br>
+- 
