@@ -54,4 +54,4 @@ It will contain all the python topics from basic and also contains some tools li
 - Day - 50 - Intermediate+ Auto tinder swiping bot <br>
 - Day - 51 - Intermediate+ twitter internet speed compalint bot <br>
 - Day - 52 - Intermediate+ Instagram follower bot <br>
-- 
+- Day - 53 - Intermediate+ Web Scraping Capstone - Data Entry Job Automation <br>
