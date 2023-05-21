@@ -57,4 +57,4 @@ It will contain all the python topics from basic and also contains some tools li
 - Day - 53 - Intermediate+ Web Scraping Capstone - Data Entry Job Automation <br>
 - Day - 54 - Intermediate+ Introduction to Web Development with Flask <br>
 - Day - 55 - Intermediate+ HTML & URL Parsing in Flask and the Higher Lower Game <br>
-- 
+- Day - 56 - Intermediate+ Rendering HTML/Static files and Using Website Templates <br>
