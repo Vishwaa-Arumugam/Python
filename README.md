@@ -58,3 +58,4 @@ It will contain all the python topics from basic and also contains some tools li
 - Day - 54 - Intermediate+ Introduction to Web Development with Flask <br>
 - Day - 55 - Intermediate+ HTML & URL Parsing in Flask and the Higher Lower Game <br>
 - Day - 56 - Intermediate+ Rendering HTML/Static files and Using Website Templates <br>
+- Day - 57 - Intermediate+ Templating with Jinja in Flask Applications <br>
