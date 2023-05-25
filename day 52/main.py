@@ -3,12 +3,14 @@ from selenium.common import ElementClickInterceptedException
 from selenium.webdriver.common.by import By
 from time import sleep
 
-INSTA_USER_NAME = "mname5121"
-INSTA_PASSWORD = "ahtina1234"
+INSTA_USER_NAME = "user_name"
+INSTA_PASSWORD = "password"
 
 
 class Insta_follower:
 
+    # if using xpath as an identifier kindly copy the full xpath from browser    
+    
     def __init__(self):
         self.driver = webdriver.Chrome()
 
