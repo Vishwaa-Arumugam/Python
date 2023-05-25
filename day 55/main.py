@@ -7,7 +7,6 @@ app = Flask(__name__)
 def hello_world():
     return '<h1 style="text-align: center">Hello World</h1>' \
            '<p>This is a paragraph tag</p>' \
-           '<img src="https://media4.giphy.com/media/YRVP7mapl24G6RNkwJ/200w.webp?cid=ecf05e47benlcxpt2k5029czo9y750mvkysuasau5eoqye13&rid=200w.webp&ct=g" width=200px>'
 
 
 def make_bold(function):
