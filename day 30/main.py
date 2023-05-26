@@ -1,5 +1,4 @@
-# 
-
+# Practice program for day 30
 try:
     file = open("file.txt")
     dictionary = {"key" : "value"}
