@@ -5,7 +5,6 @@ import pyperclip
 import json
 
 
-# ---------------------------- PASSWORD GENERATOR ------------------------------- #
 def generate_password():
     letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
                'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P',
@@ -28,9 +27,6 @@ def generate_password():
     label_3_input.insert(0, new)
 
     # pyperclip.copy(password)
-
-
-# ---------------------------- SAVE PASSWORD ------------------------------- #
 
 def save():
     website = label_1_input.get()
