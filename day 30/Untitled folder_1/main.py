@@ -53,7 +53,7 @@ def save():
                 with open("data.json", "w") as data_file:
                     json.dump(new_data, data_file, indent=4)
             else:
-                data.update(new_data) # to update a json data without changing the format ##
+                data.update(new_data) # to update a json data without changing the format #
                 with open("data.json", "w") as data_file:
                     json.dump(data, data_file, indent=4)
             finally:
