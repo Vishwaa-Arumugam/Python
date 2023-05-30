@@ -26,7 +26,7 @@ def generate_password():
 
     label_3_input.insert(0, new)
 
-    # pyperclip.copy(password)
+    # pyperclip.copy(password) # to copy the password in the text field
 
 def save():
     website = label_1_input.get()
