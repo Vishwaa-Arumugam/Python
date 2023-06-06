@@ -7,7 +7,6 @@ student_dict = {
 
 
 for (key, value) in student_dict.items():
-    #Access key and value
     pass
 
 import pandas
