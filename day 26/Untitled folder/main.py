@@ -3,8 +3,6 @@ student_dict = {
     "score": [56, 76, 98]
 }
 
-#Looping through dictionaries:
-
 
 for (key, value) in student_dict.items():
     pass
