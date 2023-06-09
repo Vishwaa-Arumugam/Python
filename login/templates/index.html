@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input List to Flask</title>
+</head>
+<body>
+    <input type="text" id="inputField" placeholder="Enter a value">
+    <button onclick="addInput()">Add</button>
+    <button onclick="sendList()">Send List</button>
+    <ul id="inputList"></ul>
+
+    <script>
+        var inputList = [];
+
+        function addInput() {
+            var inputField = document.getElementById('inputField');
+            var value = inputField.value;
+
+            if (value) {
+                inputList.push(value);
+                inputField.value = '';
+                renderList();
+            }
+        }
+
+        function sendList() {
+            fetch('/receive_list', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(inputList)
+            });
+        }
+
+        function renderList() {
+            var inputListElement = document.getElementById('inputList');
+            inputListElement.innerHTML = '';
+
+            for (var i = 0; i < inputList.length; i++) {
+                var listItem = document.createElement('li');
+                listItem.textContent = inputList[i];
+                inputListElement.appendChild(listItem);
+            }
+        }
+    </script>
+</body>
+</html>

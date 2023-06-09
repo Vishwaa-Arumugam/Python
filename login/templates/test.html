@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="static/style.css">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.18.0/maps/maps-web.min.js"></script>
+    
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.18.0/maps/maps.css"
+    />
+    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.18.0/services/services-web.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>EnRoute</title> 
+    <script>
+        const locationList = [];
+        function sendList() {
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "/route", true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+            var jsonData = JSON.stringify(locationList);
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    console.log("Location list sent successfully.");
+                    // Do something with the response if needed
+                } else {
+                    console.error("Error sending location list: " + xhr.status);
+                }
+            };
+            xhr.send(jsonData);
+        }
+
+        function addOrigins() {
+  const originInput = document.getElementById('origin');
+  const originLocation = originInput.value.trim();
+  const checkIcon = document.querySelector('.bx-check');
+  const searchInput = document.getElementById('input-field');
+  
+  if (originLocation !== '') {
+    const [latitude, longitude] = originLocation.split(',').map(parseFloat);
+    const originObject = { latitude, longitude };
+    locationList.unshift(originObject);
+    originInput.disabled = true;
+    checkIcon.className = 'bx bx-x icon';
+    checkIcon.onclick = function() {
+      locationList.shift();
+      originInput.value = '';
+      originInput.disabled = false;
+      checkIcon.className = 'bx bx-check icon';
+      checkIcon.onclick = addOrigins;
+    };
+  }
+}
+
+        function addOrigin() {
+          const originInput = document.getElementById('origin');
+          const originLocation = originInput.value.trim();
+
+          if (originLocation !== '') {
+              const [latitude, longitude] = originLocation.split(',').map(parseFloat);
+              const originObject = { latitude, longitude };
+
+              // Add origin location to the beginning of the locationList
+              locationList.unshift(originObject);
+      // Calculate the optimized route with updated origin location
+          }
+      }
+
+        function addLocation() {
+            const menuLinksElement = document.querySelector('.menu-links');
+            const searchInput = document.getElementById('input-field');
+
+            const location = searchInput.value.trim();
+
+            if (location !== '') {
+                const [latitude, longitude] = location.split(',').map(parseFloat);
+                const locationObject = { latitude, longitude };
+
+                locationList.push(locationObject);
+                searchInput.value = '';
+
+                renderList();
+            }
+}
+
+
+    function deleteLocation(location) {
+    const index = locationList.indexOf(location);
+    if (index !== -1) {
+        locationList.splice(index, 1);
+        renderList();
+    }
+    }
+
+    function renderList() {
+        const menuLinksElement = document.querySelector('.menu-links');
+        menuLinksElement.innerHTML = ''; // Clear the menuLinksElement before rendering
+
+        for (let i = 0; i < locationList.length; i++) {
+            const location = locationList[i];
+
+            const navLink = document.createElement('li');
+            navLink.className = 'nav-link';
+
+            const anchor = document.createElement('a');
+            anchor.href = '#';
+
+            const icon = document.createElement('i');
+            icon.className = 'bx bx-location-plus icon';
+
+            const text = document.createElement('span');
+            text.className = 'text nav-text';
+            text.textContent = location.latitude + ',' + location.longitude;
+
+            const deleteIcon = document.createElement('i');
+            deleteIcon.className = 'bx bx-trash delete-icon icon';
+            deleteIcon.style.marginLeft = 'auto';
+
+            deleteIcon.addEventListener('click', function () {
+            deleteLocation(location);
+            });
+
+            anchor.appendChild(icon);
+            anchor.appendChild(text);
+            anchor.appendChild(deleteIcon);
+            navLink.appendChild(anchor);
+
+            menuLinksElement.appendChild(navLink);
+  }
+}
+    var menuLinks = document.getElementById('menu-links');
+    var menuLinksContentHeight = menuLinks.scrollHeight;
+    var maxHeight = Math.min(menuLinksContentHeight, 350); // Adjust the max-height value as desired
+    menuLinks.style.maxHeight = maxHeight + 'px';
+
+    // Declare a variable to store the markers
+</script>
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <lottie-player alt="static/img/truck.gif" src="static/img/truck.json" background="transparent" speed="1" class="image" loop autoplay></lottie-player>
+                <div class="text logo-text">
+                    <span class="name">EnRoute</span>
+                    <span class="profession">Route Optimizer</span>
+                </div>
+            </div>
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                    <i class='bx bx-home icon'></i>
+                    <input id="origin" type="text" placeholder="Origin">
+                    <i class='bx bx-check icon' style = 'color: #695CFE;' onclick='addOrigins()'></i>
+                </li>
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" id="input-field" placeholder="Search">
+                </li>
+                <li class="btn" onclick="addLocation()">
+                    <a href="#">
+                        <i class='bx bx-add-to-queue icon' ></i>
+                        <span class="text nav-text">Add Location</span>
+                    </a>
+                </li>
+                <br>
+                <div>
+                    <ul id ="menu-links" class="menu-links">
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bottom-content">
+                
+                    <li class="btn" onclick="placeMarkers()">
+                        <a href="#">
+                            <i class='bx bx-add-to-queue icon' ></i>
+                            <span class="text nav-text">Submit</span>
+                        </a>
+                    </li>
+                
+                <li class="">
+                    <a href="login.html">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>a
+                </li>  
+            </div>
+        </div>
+    </nav>
+    <section class="home">
+        <div>
+            <div class="text">En Route: Your Destination Partner</div>
+        </div>
+        <div class="middle-content">
+            <div id="map"></div>
+        </div>
+        <div class="bottom-content">
+        <button type="submit" class="btn" onclick="optim()">Calculate Route
+        <i class='bx bxs-chevrons-right'></i>
+        </button>
+        <div id="distanceDisplay" class="distance-display"></div>
+        </div>
+    </section>
+    <script>
+        const API = 'm8JZg2Js34pKVvkBE0vuUSXPfNbNrPAZ'
+        function showDistance() {
+        var distance = 100; // Replace calculateDistance() with your own logic to calculate the distance
+        var distanceDisplay = document.getElementById("distanceDisplay");
+        distanceDisplay.innerText = "Optimized distance: " + distance + " km";
+        }
+        const latitude = 13.0836939;
+        const longitude = 80.270186;
+        var loc = [80.29444,13.0925]
+        var map = tt.map({
+            container: "map",
+            key: "m8JZg2Js34pKVvkBE0vuUSXPfNbNrPAZ",
+            center:[longitude, latitude],
+            zoom:15,
+            style: 'static/dark.json'
+        })
+        //var element = document.createElement('div');
+        //element.id = 'marker';
+        //var marker = new tt.Marker({element: element}).setLngLat(loc).addTo(map);
+        let markers = [];
+        let routes = [];
+        function placeMarkers() {
+                sendList()
+                var loc = locationList[0]
+                const { longitude, latitude } = loc;
+                const element = document.createElement('div');
+                element.id = 'origins';
+                const mar = new tt.Marker({ element: element }).setLngLat([longitude, latitude]).addTo(map);
+  // Clear any existing markers from the map
+            for (const marker of markers) {
+                marker.remove();
+            }
+            markers = [];
+            locationList.push(locationList[0]);
+            for (const location of locationList) {
+                const { longitude, latitude } = location;
+                const element = document.createElement('div');
+                element.id = 'marker';
+                const marker = new tt.Marker({ element: element }).setLngLat([longitude, latitude]).addTo(map);
+                markers.push(marker); // Store the marker in the markers array
+                // Customize the marker's appearance or add any additional logic here
+            }
+            if (locationList.length > 0) {
+                    const firstLocation = locationList[0];
+                    map.setCenter([firstLocation.longitude, firstLocation.latitude]); // Set the center of the map to the coordinates of the first location
+                }
+                drawRoutes();
+            clearRoute();
+            }
+            var routeLayerId = "route"; 
+            var totalDistance = 0;
+        function drawRoutes() {
+            if (locationList.length < 2) {
+                // Not enough locations for a route
+                clearRoute();
+                return;
+            }
+            // Create an array of waypoints for the route request
+            var waypoints = locationList.map(function(location) {
+                return { lng: location.longitude, lat: location.latitude };
+            });
+
+            // Request the route and draw it on the map
+            var routeRequest = {
+                key: API,
+                locations: waypoints
+            };
+
+            tt.services
+                .calculateRoute(routeRequest)
+                .then(function(result) {
+                    var geoJson = result.toGeoJson();
+                    if (map.getLayer("route")) {
+                        map.removeLayer("route");
+                    }
+                    if (map.getSource("route")) {
+                        map.removeSource("route");
+                    }
+                    map.addLayer({
+                        id: "route",
+                        type: "line",
+                        source: {
+                            type: "geojson",
+                            data: geoJson
+                        },
+                        paint: {
+                            "line-color": 'transparent',
+                            "line-width": 0
+                        }
+                    });
+
+                    totalDistance = result.routes[0].summary.lengthInMeters / 1000; // Distance in kilometers
+                    console.log("Total distance:", totalDistance, "km");
+                    // You can display the total distance in the UI or perform any other logic with it
+                })
+                .catch(function(error) {
+                    console.log("Error:", error);
+                });
+        }
+
+        function optim() {
+                clearRoute();
+                if (locationList.length < 2) {
+                    // Not enough locations for a route
+                    return;
+                }
+
+                var waypoints = locationList.map(function(location) {
+                    return { lng: location.longitude, lat: location.latitude };
+                });
+
+                var URL = 'https://api.tomtom.com/routing/waypointoptimization/1/best?key=' + API;
+
+                axios.post(URL, {
+                    waypoints: waypoints.map(function(element) {
+                        return {
+                            point: {
+                                latitude: element.lat,
+                                longitude: element.lng
+                            }
+                        };
+                    })
+                })
+                .then(function(response) {
+                    console.log(response);
+
+                    var solution = response.data.optimizedOrder;
+                    var locations = solution.map(function(order, index) {
+                        var popup = new tt.Popup({ offset: 50 }).setText("Destination #" + (index + 1));
+                        markers[order].setPopup(popup);
+                        return waypoints[order];
+                    });
+
+                    createRoute({
+                        key: API,
+                        locations: locations
+                    });
+                })
+                .catch(function(error) {
+                    console.log("Error:", error);
+                });
+
+                function createRoute(options) {
+                    tt.services.calculateRoute(options).then(function(response) {
+                        var features = response.toGeoJson().features;
+                        features.forEach(function(feature, index) {
+                            map.addLayer({
+                                'id': 'route' + index,
+                                'type': 'line',
+                                'source': {
+                                    'type': 'geojson',
+                                    'data': feature
+                                },
+                                'paint': {
+                                    'line-color': 'blue',
+                                    'line-opacity': 0.7,
+                                    'line-width': 10,
+                                    'line-dasharray': [1, 0, 1, 0]
+                                },
+                                'layout': {
+                                    'line-cap': 'round',
+                                    'line-join': 'round'
+                                }
+                            });
+                        });
+                    });
+                }
+                showDistance();
+            }
+
+        function clearRoute() {
+            if (map.getLayer("route")) {
+                map.removeLayer("route");
+            }
+            if (map.getSource("route")) {
+                map.removeSource("route");
+            }
+        }
+        function showDistance() {
+            var distanceDisplay = document.getElementById("distanceDisplay");
+            distanceDisplay.innerText = "Optimized distance: " + totalDistance.toFixed(2) + " km";
+            }             
+    </script>
+    <script src="static/script.js"></script>
+</body>
+</html>
