@@ -60,3 +60,4 @@ It will contain all the python topics from basic and also contains some tools li
 - Day - 56 - Intermediate+ Rendering HTML/Static files and Using Website Templates <br>
 - Day - 57 - Intermediate+ Templating with Jinja in Flask Applications <br>
 - Day - 58 - Intermediate+ Bootstrap : Web foundation <br>
+- Day - 59 - Intermediate+ Advanced - Blog Capstone Project Part 2 - Adding Styling <br>
