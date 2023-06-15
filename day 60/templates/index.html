@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day 60</title>
+</head>
+<body>
+    <form action="{{ url_for('receive_data') }}" method="post">
+  <label for="name">name:</label>
+  <input type="text" id="name" name="username">
+  <label for="pass">password:</label>
+  <input type="text" id="pass" name="password">
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
