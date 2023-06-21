@@ -62,3 +62,4 @@ It will contain all the python topics from basic and also contains some tools li
 - Day - 58 - Intermediate+ Bootstrap : Web foundation <br>
 - Day - 59 - Intermediate+ Advanced - Blog Capstone Project Part 2 - Adding Styling <br>
 - Day - 60 - Advanced - Make POST Requests with Flask and HTML Forms <br>
+- Day - 61 - Building advanced forms with Flask-WTForms
